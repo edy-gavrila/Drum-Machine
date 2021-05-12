@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <div class="key-container">
+        <button class="center-key" id="center-btn">
+          <i class="fas fa-3x fa-drum"></i>
+        </button>
+        <button class="drum-pad key" id="btn1">Q</button>
+        <button class="drum-pad key" id="btn2">W</button>
+        <button class="drum-pad key" id="btn3">E</button>
+        <button class="drum-pad key" id="btn4">A</button>
+        <button class="drum-pad key" id="btn5">S</button>
+        <button class="drum-pad key" id="btn6">D</button>
+        <button class="drum-pad key" id="btn7">Z</button>
+        <button class="drum-pad key" id="btn8">X</button>
+        <button class="drum-pad key" id="btn9">C</button>
+      </div>
+      <div class="controls-container">
+        <p id="power-text">Power</p>
+        <label class="switch" id="power">
+          <input type="checkbox" id="power-check" />
+          <span class="slider round"></span>
+        </label>
+
+        <p id="bank-text">Bank</p>
+        <label class="switch" id="bank-switch">
+          <input type="checkbox" id="bank-check" />
+          <span class="slider round"></span>
+        </label>
+
+        <div class="display" id="display"></div>
+
+        <input type="range" min="1" max="100" value="50" id="volume" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
