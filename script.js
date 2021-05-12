@@ -218,6 +218,11 @@ function updateDisplay(msg) {
   }, 1000);
 }
 
+keys.forEach((key, idx) => {
+  key.classList.add("enabled");
+  key.classList.add(`btn${idx + 1}`);
+});
+
 //this function calculates the coordinates for the buttons
 //wich we hardwired into css for speed
 // function calcRotation(r, offsetX, offsetY) {
